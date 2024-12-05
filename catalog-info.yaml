@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: ro2jr5r1g-go-gitops
+  description: This is GitOps manifest for ro2jr5r1g-go   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-name: ro2jr5r1g-go
+    backstage.io/kubernetes-id: ro2jr5r1g-go 
+    backstage.io/techdocs-ref: dir:. 
+    jenkins.io/job-full-name: ro2jr5r1g-go-gitops   
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:ro2jr5r1g-go

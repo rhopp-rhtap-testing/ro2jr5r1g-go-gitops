@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: ro2jr5r1g-go-gitops-repository
+spec:
+  url: https://github.com/rhopp-rhtap-testing/ro2jr5r1g-go-gitops
